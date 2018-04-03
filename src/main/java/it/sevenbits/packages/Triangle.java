@@ -61,7 +61,7 @@ public class Triangle {
         boolean req_3 = (Math.sqrt(Math.pow(a, 2) + Math.pow(c, 2)) == b) &&
                         (Math.sqrt(Math.pow(b, 2) - Math.pow(c, 2)) == a) &&
                         (Math.sqrt(Math.pow(b, 2) - Math.pow(a, 2)) == c);
-
+        
         return req_1 || req_2 || req_3;
     }
 

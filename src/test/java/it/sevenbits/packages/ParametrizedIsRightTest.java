@@ -10,23 +10,23 @@ import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Parametrized test - easier to tes a lot of data in similar way
+ * Testing some triangles if they are right
  */
 @RunWith(Parameterized.class)
-public class ParametrizedTest {
+public class ParametrizedIsRightTest {
     private double a;
     private double b;
     private double c;
     private boolean expected;
 
-    public ParametrizedTest(final double a, final double b, final double c, final boolean expected) {
+    public ParametrizedIsRightTest(final double a, final double b, final double c, final boolean expected) {
         this.a = a;
         this.b = b;
         this.c = c;
         this.expected = expected;
     }
 
-    @Parameterized.Parameters(name = "{index}:triangle {0}, {1}, {2} exists: {3}")
+    @Parameterized.Parameters(name = "{index}:triangle {0}, {1}, {2} is right: {3}")
     public static Iterable<Object[]> dataForTest() {
         return Arrays.asList(new Object[][]{
                 {3, 4, 5, true},
